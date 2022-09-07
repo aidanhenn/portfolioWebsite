@@ -1,0 +1,135 @@
+body {
+  background-color: white;
+  /*background-image: repeating-linear-gradient(10deg, transparent, red 100%);*/
+}
+
+.intro {
+  color: black;
+  font-size: 60px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+nav {
+  display: block;
+  top: 0;
+  right: 0;
+}
+.social-icon {
+  color: red;
+  font-size: 50px;
+  transition: color 0.2s;
+  text-decoration: none;
+  margin: 15px 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.social-icon:hover {
+  color: darkred;
+  transform: (0px, 1px, 0px);
+  cursor: pointer;
+}
+
+.boxes {
+  padding: 5px;
+  font-size: 35px;
+  color: red;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  border: solid red;
+  box-sizing: border-box;
+  border-width: 2px;
+  box-sizing: border-box;
+
+  background: linear-gradient(to right, red 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.15s ease-out;
+}
+
+.boxes:hover {
+  background-position: left bottom;
+  color: white;
+}
+.center {
+  justify-content: center;
+  text-align: center;
+}
+#skills {
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 400px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#projects {
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 400px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about {
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 400px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact {
+  font-size: 50px;
+  justify-content: center;
+  margin-top: 400px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact {
+  color: red;
+}
+.messageBox {
+  height: 150px;
+  width: 40%;
+  margin: 5px 0;
+}
+.contact-boxes {
+  justify-content: center;
+  text-align: center;
+  border-width: 5px;
+}
+
+input {
+  width: 40%;
+  height: 45px;
+  margin: 5px 0;
+}
+.sendButton {
+  text-decoration: none;
+  background-color: white;
+  border-color: red;
+  border-width: 2px;
+  font-size: 30px;
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px 0;
+
+  background: linear-gradient(to right, red 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.15s ease-out;
+}
+.sendButton:hover {
+  background-position: left bottom;
+  color: white;
+}
