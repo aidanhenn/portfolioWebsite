@@ -1,25 +1,19 @@
 body {
-  background-color: white;
-  /*background-image: repeating-linear-gradient(10deg, transparent, red 100%);*/
+  background-color: #004643;
 }
-
-.intro {
-  color: black;
-  font-size: 60px;
-  font-weight: 700;
-  justify-content: center;
-  margin-top: 100px;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
+/* start of styling for home page */
+.social_links {
+  float: right;
+  margin-top: 2%;
+  margin-right: 5%;
 }
-
-nav {
-  display: block;
-  top: 0;
-  right: 0;
+.page_links {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 .social-icon {
-  color: red;
+  color: #f9bc60;
   font-size: 50px;
   transition: color 0.2s;
   text-decoration: none;
@@ -34,69 +28,185 @@ html {
 }
 
 .social-icon:hover {
-  color: darkred;
-  transform: (0px, 1px, 0px);
+  color: white;
   cursor: pointer;
 }
 
+.intro {
+  color: #abd1c6;
+  font-size: 90px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 10%;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.name {
+  color: #f9bc60;
+}
+
+.moveInwards {
+  animation: moveInwards 1s;
+}
+@keyframes moveInwards {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .boxes {
   padding: 5px;
   font-size: 35px;
-  color: red;
+  color: #004643;
   font-family: Montserrat, sans-serif;
   font-weight: 900;
-  border: solid red;
+  border: solid #abd1c6;
   box-sizing: border-box;
   border-width: 2px;
-  box-sizing: border-box;
 
-  background: linear-gradient(to right, red 50%, white 50%);
+  background: linear-gradient(to right, #f9bc60 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.15s ease-out;
 }
+.new-div {
+  margin-top: 13%;
+}
+.projects-div {
+  width: 100%;
+  margin-top: 20%;
+}
+.image-div {
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 70%;
+}
+.map-img {
+  width: 75%;
+  height: 100%;
+  border-radius: 100px;
+}
+.app-img {
+  width: 75%;
+  height: 500px;
+  border-radius: 100px;
+  margin-top: 5%;
+}
 
+.info-div {
+  border-radius: 10px;
+  color: white;
+  width: 25%;
+  height: 100%;
+  float: left;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.project-button {
+  display: inline;
+  text-align: center;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px 15px;
+  background-size: 200% 200%;
+  border: white;
+  margin-top: 10px;
+}
+.project2-button {
+  display: inline;
+  text-align: center;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px 15px;
+  background-size: 200% 200%;
+  border: white;
+  margin-top: 10px;
+}
+.project-button:hover {
+  text-decoration: underline;
+}
+.project2-button:hover {
+  text-decoration: underline;
+}
 .boxes:hover {
   background-position: left bottom;
   color: white;
 }
+
+.mainHeaders {
+  color: #abd1c6;
+  font-size: 25px;
+  justify-content: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* end of styling for home page*/
+
+/*start of styling for about page*/
 .center {
   justify-content: center;
   text-align: center;
 }
-#skills {
-  font-size: 50px;
-  justify-content: center;
-  margin-top: 400px;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.about_box {
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 40%;
+  padding: 5px;
+  font-size: 35px;
+  color: #abd1c6;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  border: solid #abd1c6;
+  box-sizing: border-box;
+  border-width: 2px;
+  float: left;
+  box-shadow: 10px 10px 10px rgba(5, 5, 5, 5);
 }
+.headerFont {
+  color: white;
+  text-decoration: underline;
+}
+.about {
+  margin-top: 5%;
+  text-align: center;
+  margin-right: 5%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.skills_box {
+  margin-right: 5%;
+  margin-top: 5%;
+  width: 40%;
+  padding: 5px;
+  font-size: 35px;
+  color: #abd1c6;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  border: solid #abd1c6;
+  box-sizing: border-box;
+  border-width: 2px;
+  float: right;
+  box-shadow: 10px 10px 10px rgba(5, 5, 5, 5);
+}
+.skills {
+  margin-top: 5%;
+  text-align: center;
+  margin-right: 5%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+/* end of styling for about page */
 
-#projects {
-  font-size: 50px;
-  justify-content: center;
-  margin-top: 400px;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#about {
-  font-size: 50px;
-  justify-content: center;
-  margin-top: 400px;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#contact {
-  font-size: 50px;
-  justify-content: center;
-  margin-top: 400px;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* start of styling for contact page */
 .contact {
-  color: red;
+  color: #abd1c6;
 }
 .messageBox {
   height: 150px;
@@ -117,14 +227,14 @@ input {
 .sendButton {
   text-decoration: none;
   background-color: white;
-  border-color: red;
+  border-color: #abd1c6;
   border-width: 2px;
   font-size: 30px;
-  color: red;
+  color: #004643;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 5px 0;
 
-  background: linear-gradient(to right, red 50%, white 50%);
+  background: linear-gradient(to right, #f9bc60 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.15s ease-out;
@@ -133,3 +243,4 @@ input {
   background-position: left bottom;
   color: white;
 }
+/* end of styling for contact page*/
