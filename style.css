@@ -1,23 +1,29 @@
 body {
-  background-color: #004643;
+  background-color: #2f4f4f;
+  overflow-x: hidden;
+  font-family: Roboto Mono, monospace;
 }
-/* start of styling for home page */
+/* links and intro styles */
 .social_links {
   float: right;
-  margin-top: 2%;
-  margin-right: 5%;
+  margin-top: 4vh;
+  margin-right: 4vh;
+}
+
+.social-icon ion-icon {
+  pointer-events: none;
 }
 .page_links {
   display: inline-block;
-  margin-left: 5%;
-  margin-top: 2%;
+  margin-left: 4vh;
+  margin-top: 4vh;
 }
 .social-icon {
-  color: #f9bc60;
-  font-size: 50px;
+  color: #f2f2f2;
+  font-size: 8vh;
   transition: color 0.2s;
   text-decoration: none;
-  margin: 15px 15px;
+  margin: 3vh 3vh;
 }
 a {
   text-decoration: none;
@@ -28,107 +34,87 @@ html {
 }
 
 .social-icon:hover {
-  color: white;
+  color: #ff7f50;
   cursor: pointer;
 }
 
 .intro {
-  color: #abd1c6;
-  font-size: 90px;
+  color: #f2f2f2;
+  font-size: 12vh;
   font-weight: 700;
   justify-content: center;
   margin-top: 10%;
   text-align: center;
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto Mono, monospace;
 }
 .name {
-  color: #f9bc60;
+  color: #ff7f50;
 }
 
-.moveInwards {
-  animation: moveInwards 1s;
-}
-@keyframes moveInwards {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .boxes {
-  padding: 5px;
-  font-size: 35px;
+  padding: 1vh;
+  font-size: 6vh;
   color: #004643;
   font-family: Montserrat, sans-serif;
   font-weight: 900;
-  border: solid #abd1c6;
+  border: solid #ff7f50;
   box-sizing: border-box;
-  border-width: 2px;
-
-  background: linear-gradient(to right, #f9bc60 50%, white 50%);
+  border-width: .75vh;
+  margin-bottom: 5vh;
+  background: linear-gradient(to right, #ff7f50 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.15s ease-out;
 }
-.new-div {
-  margin-top: 13%;
+
+/* end of syling for links and intro*/
+
+/*Start of styling for projects section */
+
+#projects{
+  margin-bottom: 15%;
+  margin-top: 5%;
 }
 .projects-div {
   width: 100%;
-  margin-top: 20%;
 }
 .image-div {
   display: flex;
   justify-content: center;
   float: left;
-  width: 70%;
+  width: 65%;
+  margin-bottom: 20%;
+
 }
-.map-img {
-  width: 75%;
-  height: 100%;
-  border-radius: 100px;
-}
+
 .app-img {
   width: 75%;
-  height: 500px;
-  border-radius: 100px;
-  margin-top: 5%;
+  height: 60vh;
+  border-radius: 10vh;
 }
 
 .info-div {
-  border-radius: 10px;
+  border-radius: 3vh;
   color: white;
-  width: 25%;
+  width: 30%;
   height: 100%;
   float: left;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-right: 2vh;
+  margin-bottom: 20%;
 }
+
 .project-button {
   display: inline;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 4vh;
   width: fit-content;
-  padding: 10px 15px;
+  padding: 2vh 2.5vh;
   background-size: 200% 200%;
   border: white;
-  margin-top: 10px;
+  margin-top: 4vh;
 }
-.project2-button {
-  display: inline;
-  text-align: center;
-  border-radius: 20px;
-  width: fit-content;
-  padding: 10px 15px;
-  background-size: 200% 200%;
-  border: white;
-  margin-top: 10px;
-}
+
 .project-button:hover {
-  text-decoration: underline;
-}
-.project2-button:hover {
   text-decoration: underline;
 }
 .boxes:hover {
@@ -136,14 +122,34 @@ html {
   color: white;
 }
 
-.mainHeaders {
-  color: #abd1c6;
-  font-size: 25px;
+.contactHeader {
+  color: #ff7f50;
+  font-size: 4vh;
   justify-content: center;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*
+.backToTop {
+  color: white;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 5%; 
+}
 
+
+.backToTop:hover {
+  color: #ff7f50;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.boxes ion-icon {
+  pointer-events: none;
+}*/
 /* end of styling for home page*/
 
 /*start of styling for about page*/
@@ -151,57 +157,13 @@ html {
   justify-content: center;
   text-align: center;
 }
-.about_box {
-  margin-left: 5%;
-  margin-right: auto;
-  margin-top: 5%;
-  width: 40%;
-  padding: 5px;
-  font-size: 35px;
-  color: #abd1c6;
-  font-family: Montserrat, sans-serif;
-  font-weight: 900;
-  border: solid #abd1c6;
-  box-sizing: border-box;
-  border-width: 2px;
-  float: left;
-  box-shadow: 10px 10px 10px rgba(5, 5, 5, 5);
-}
+
 .headerFont {
   color: white;
-  text-decoration: underline;
-}
-.about {
-  margin-top: 5%;
-  text-align: center;
-  margin-right: 5%;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
-.skills_box {
-  margin-right: 5%;
-  margin-top: 5%;
-  width: 40%;
-  padding: 5px;
-  font-size: 35px;
-  color: #abd1c6;
-  font-family: Montserrat, sans-serif;
-  font-weight: 900;
-  border: solid #abd1c6;
-  box-sizing: border-box;
-  border-width: 2px;
-  float: right;
   box-shadow: 10px 10px 10px rgba(5, 5, 5, 5);
+  border-radius: 20px;
 }
-.skills {
-  margin-top: 5%;
-  text-align: center;
-  margin-right: 5%;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
+
 /* end of styling for about page */
 
 /* start of styling for contact page */
@@ -209,14 +171,15 @@ html {
   color: #abd1c6;
 }
 .messageBox {
-  height: 150px;
-  width: 40%;
-  margin: 5px 0;
+  height: 25vh;
+  width: 40vw;
+  margin: 1.5vh 0;
 }
 .contact-boxes {
   justify-content: center;
   text-align: center;
-  border-width: 5px;
+ 
+
 }
 
 input {
@@ -227,14 +190,14 @@ input {
 .sendButton {
   text-decoration: none;
   background-color: white;
-  border-color: #abd1c6;
-  border-width: 2px;
+  border-color: #ff7f50;
+  border-width: .5vh;
   font-size: 30px;
   color: #004643;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 5px 0;
+  margin: 1.25vh 0;
 
-  background: linear-gradient(to right, #f9bc60 50%, white 50%);
+  background: linear-gradient(to right, #ff7f50 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.15s ease-out;
@@ -243,4 +206,78 @@ input {
   background-position: left bottom;
   color: white;
 }
-/* end of styling for contact page*/
+.animate-left {
+  transform: translateX(
+    -150%
+  ); /* Move the element off the screen to the left */
+  /*animation: moveIn 1s ease forwards; /* Apply the animation */
+  opacity: 0;
+}
+.animate-right {
+  transform: translateX(150%);
+  opacity: 0;
+}
+@keyframes moveLtoR {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%); /* Off-screen position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(
+      0
+    ); /* Move the element back to its original position */
+  }
+}
+
+@keyframes moveRtoL {
+  0% {
+    opacity: 0;
+    transform: translateX(150%); /* Off-screen position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(
+      0
+    ); /* Move the element back to its original position */
+  }
+}
+
+.show-left {
+  animation: moveLtoR 1s ease forwards;
+  opacity: 1;
+}
+.show-right {
+  animation: moveRtoL 1s ease forwards;
+  opacity: 1;
+}
+.info {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  color: #f2f2f2;
+  font-size: 8vh;
+  text-decoration: none;
+}
+
+.info:hover {
+  color: #ff7f50;
+  cursor: pointer;
+}
+
+.hidden-info {
+  display: none;
+  color: #ff7f50;
+  font-size: 3vh;
+}
+
+.info:hover + .hidden-info {
+  display: inline-block; /* Change to inline-block to occupy the same space as .info */
+  margin-right: 2vh; /* Maintain the same margin as .info */
+  vertical-align: middle; /* Align vertically with .info */
+}
+
+.info ion-icon {
+  pointer-events: none;
+}

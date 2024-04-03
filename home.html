@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HND7Y8RKMG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HND7Y8RKMG");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidan Hennessy</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <span class="page_links" id="top"> </span>
+
+      <div class="social_links show-right">
+        <a
+          class="social-icon"
+          href="https://www.github.com/aidanhenn"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/aidan-hennessy"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a
+          class="social-icon"
+          href="https://drive.google.com/file/d/11YigtouG9r0NY__B-LiHDy6yo__ALnlj/view?usp=sharing"
+          target="_blank"
+          ><ion-icon name="document-outline"></ion-icon
+        ></a>
+      </div>
+
+      <div class="intro show-left">
+        <p>
+          Hello, I'm <span class="name">Aidan.</span><br />
+          Welcome to my website.
+        </p>
+      </div>
+
+      <div class="center show-right" style="display: flex">
+        <a class="boxes" href="#projects">Projects </a>
+        &nbsp;&nbsp;&nbsp;
+        <a class="boxes" href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="projects"></div>
+    <div class="projects-div">
+
+      <div class="image-div animate-left">
+        <img
+          class="app-img"
+          src="TFRRS_Scored.png"
+          alt="Team Scorer App"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="info-div animate-right">
+        <h1>Track and Field Team Score Predictor</h1>
+
+        <h3>Tools used: JavaScript, NodeJS, Express, Puppeteer, HTML, CSS</h3>
+        <!-- 
+        <button class="project-button" onclick="window.open('')">
+          Open Site
+        </button>-->
+        <button
+          class="project-button"
+          onclick="window.open('https://github.com/aidanhenn/Track-And-Field-Team-Score-Predictor')"
+        >
+          View Code
+        </button>
+        <a
+            class="info"
+            target="_blank"
+          >
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </a>
+          <div class="hidden-info">
+            <br>A program that uses past perforamces to predict Track and Field team scores within a conference the user chooses.
+          </div>
+      </div>
+    </div>
+
+    <div class="projects-div">
+      <div class="image-div animate-left">
+        <img class="app-img" src="ig_followers.png" alt="Instagram App" />
+      </div>
+
+      <div class="info-div animate-right">
+        <h1>Who Unfollowed me on Instagram</h1>
+
+        <h3>Tools used: JavaScript, JSON</h3>
+
+        <button
+          class="project-button"
+          onclick="window.open('https://github.com/aidanhenn/WhoUnfollowedMe')"
+        >
+          View Code
+        </button>
+        <a
+            class="info"
+            target="_blank"
+          >
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </a>
+          <div class="hidden-info">
+            <br>A program that returns which users are not following you back based on your follower and following lists.
+          </div>
+      </div>
+    </div>
+    <!--
+    <div class="projects-div">
+      <div class="image-div animate-left">
+        <img
+          class="app-img"
+          src="WILDFIRE-TRACKER-IMAGE.png"
+          alt="Wildfire Tracker Project"
+        />
+      </div>
+
+      <div class="info-div animate-right">
+        <h1>Wildfire Tracker</h1>
+
+        <h3>Tools used: JavaScript, React, Maps Js API, HTML, CSS</h3>
+
+        <button
+          class="project-button"
+          onclick="window.open('https://incredible-frangipane-c849ab.netlify.app')"
+        >
+          Open Site
+        </button>
+        <button
+          class="project-button"
+          onclick="window.open('https://github.com/aidanhenn/Wildfire-Tracker')"
+        >
+          View Code
+        </button>
+      </div>
+    </div>
+ -->
+    <div class="projects-div">
+      <div class="image-div animate-left">
+        <img class="app-img" src="RR.jpg" alt="Round Robin" />
+      </div>
+
+      <div class="info-div animate-right">
+        <h1>Round Robin Scheduling Simulator</h1>
+
+        <h3>Tools used: Python</h3>
+
+        <div class="button-container">
+          <button
+            class="project-button"
+            onclick="window.open('https://github.com/aidanhenn/roundRobin')"
+          >
+            View Code
+          </button>
+          <a
+            class="info"
+            target="_blank"
+          >
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </a>
+          <div class="hidden-info">
+            <br>A program that simulates a round robin scheduler using randomly generated arrival and service times.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="projects-div">
+      <div class="image-div animate-left">
+        <img class="app-img" src="nfl.jpeg" alt="NFL Combine" />
+      </div>
+
+      <div class="info-div animate-right">
+        <h1>NFL Combine Draft Predictor</h1>
+
+        <h3>Tools used: R, randomForest</h3>
+        <div>
+          <button
+            class="project-button"
+            onclick="window.open('https://github.com/aidanhenn/NFL_combine')"
+          >
+            View Code
+          </button>
+          <a
+            class="info"
+            target="_blank"
+          >
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </a>
+          <div class="hidden-info">
+            <br>A program that can predict with 70% accuracy whether or not a player will get drafted based soley on their combine performance.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div class="backToTop">
+      <a class="boxes" href="#top"
+        ><ion-icon name="chevron-up-outline"></ion-icon> <br />
+        target="_blank"
+      </a>
+    </div>-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

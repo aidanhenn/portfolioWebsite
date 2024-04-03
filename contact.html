@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HND7Y8RKMG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HND7Y8RKMG");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +22,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <span class="page_links">
-      <a class="boxes" href="index.html">Home</a>
-      <a class="boxes" href="about.html">About</a>
+    <span class="page_links show-left">
+      <a class="boxes" href="home.html">Home</a>
     </span>
-    <div class="social_links">
+    <div class="social_links show-right">
       <a
         class="social-icon"
         href="https://www.github.com/aidanhenn"
@@ -29,20 +42,20 @@
       </a>
       <a
         class="social-icon"
-        href="https://drive.google.com/file/d/1mZ8_m_Xtdj3apzAOvpg-PBtiFx2zB88k/view?usp=share_link"
+        href="https://drive.google.com/file/d/11YigtouG9r0NY__B-LiHDy6yo__ALnlj/view?usp=sharing"
         target="_blank"
         ><ion-icon name="document-outline"></ion-icon
       ></a>
     </div>
-    <div class="mainHeaders">
+    <div class="contactHeader">
       <h1 id="contact">Contact Me</h1>
     </div>
     <form action="POST" data-netlify="true">
       <div class="contact-boxes">
-        <div class="">
+        <div class="contact-boxes">
           <input type="text" placeholder="Name" name="name" required />
         </div>
-        <div class="">
+        <div class="contact-boxes">
           <input type="text" placeholder="E-mail" name="email" required />
         </div>
         <div>
