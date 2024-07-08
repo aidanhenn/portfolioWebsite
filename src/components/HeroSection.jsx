@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
@@ -9,16 +8,15 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='videos/space.mp4' autoPlay loop muted />
-      <h1>Hi I'm Aidan, <br/>Welcome to my website.</h1>
+      <h1>Hi, I'm <span class="name">Aidan.</span> <br/>Welcome to my website.</h1>
       
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+        <a
+          className='projectsButton'
+          href="#cards"
         >
-          PROJECTS
-        </Button>
+          Projects
+        </a>
        
       </div>
     </div>

@@ -29,33 +29,32 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          
           <Link
-              class='social-icon-link Github'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-github' />
-            </Link>
+            class="social-icon-link Github"
+            to="https://github.com/aidanhenn"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-github" />
+          </Link>
           <Link
-              class='social-icon-link linkedin'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+            class="social-icon-link linkedin"
+            to="https://www.linkedin.com/in/aidan-hennessy/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin" />
+          </Link>
 
-            <Link
-              class='social-icon-link Resume'
-              to='/'
-              target='_blank'
-              aria-label='Resume'
-            >
-              <i class="fa fa-file-text" />
-            </Link>
-            
+          <Link
+            class="social-icon-link Resume"
+            to="https://drive.google.com/file/d/1t-if2LuZs7DuIe-sAI6Q0Q-KDr7h69f3/view?usp=sharing"
+            target="_blank"
+            aria-label="Resume"
+          >
+            <i class="fa fa-file-text" />
+          </Link>
+
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fa-solid fa-bars"} />
           </div>
@@ -65,23 +64,14 @@ function Navbar() {
                 Projects
               </Link>
             </li>
+    
             <li className="nav-item">
               <Link
-                to="/services"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                About Me
-              </Link>
-            </li>
-            
-            <li className="nav-item">
-              <Link
-                to="/sign-up"
+                to="/contact-me"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+               Contact Me
               </Link>
             </li>
           </ul>

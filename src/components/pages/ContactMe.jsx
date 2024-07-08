@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 import Contact from '../Contact';
 
-function SignUp(){
+function ContactMe(){
  return(
   <>
   <Contact/>
@@ -12,4 +12,4 @@ function SignUp(){
 
 
 
-export default SignUp;
+export default ContactMe;

@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
-import Services from "./components/pages/Services";
-import SignUp from "./components/pages/SignUp";
+import ContactMe from "./components/pages/ContactMe";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
       </Router>
     </>
