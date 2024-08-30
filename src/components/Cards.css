@@ -1,3 +1,7 @@
+body{
+  overflow: visible !important;
+
+}
 .cards {
   padding: 4rem;
   background: #fff;
