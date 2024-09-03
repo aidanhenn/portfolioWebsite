@@ -8,14 +8,15 @@ function Cards() {
       <div className="cards__wrapper"></div>
       <ul className="cards__items">
         <CardItem
+          loading="lazy"
           src="/images/unfollowers.png"
           target="_blank"
           text="INSTAGRAM UNFOLLOWER FINDER"
           label="JavaScript   +   React"
           path="https://cheery-eclair-61cc3e.netlify.app/"
-          
         />
         <CardItem
+          loading="lazy"
           src="/images/TFRRS.jpg"
           text="TRACK AND FIELD CONFERENCE SCORE PREDICTOR"
           label="JavaScript   +   Express.js   +   Puppeteer"
@@ -24,12 +25,14 @@ function Cards() {
       </ul>
       <ul className="cards__items">
         <CardItem
+          loading="lazy"
           src="images/combine.jpg"
           text="NFL DRAFT PREDICTOR"
           label="R   +   randomForest"
           path="https://github.com/aidanhenn/NFL_combine"
         />
         <CardItem
+          loading="lazy"
           src="images/rr.jpg"
           text="ROUND ROBIN SIMULATOR"
           label="Python"
