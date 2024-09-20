@@ -30,7 +30,7 @@
 }
 
 .social-icon-link:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #1f98f4;
   transition: all 0.2s ease-out;
 }
   .nav-menu {
@@ -58,7 +58,7 @@
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid #1f98f4;
     transition: all 0.2s ease-out;
   }
   

@@ -1,98 +1,128 @@
+body {
+  background: linear-gradient(to bottom, #302f2f, #8a8989);
+}
+
 video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-  }
-  
-  .hero-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-  }
-  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  opacity: 0.9;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
   .hero-container > h1 {
-    color: #fff;
-    font-size: 100px;
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
     margin-top: -100px;
-    margin-bottom: 100px;
-    opacity: .9;
   }
-  
+
   .hero-container > p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
   }
-  
-  .hero-btns {
-    margin-top: 32px;
-  }
-  
-  .hero-btns .btn {
-    margin: 6px;
-  }
-  
-  .fa-play-circle {
-    margin-left: 4px;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .hero-container > h1 {
-      font-size: 70px;
-      margin-top: -150px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .hero-container > h1 {
-      font-size: 50px;
-      margin-top: -100px;
-    }
-  
-    .hero-container > p {
-      font-size: 30px;
-    }
-  
-    .btn-mobile {
-      display: block;
-      text-decoration: none;
-    }
-  
-    .btn {
-      width: 100%;
-    }
-  }
-  .name {
-    background: linear-gradient(to right, white, red); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    background-clip: text; 
-    color: transparent; 
-  }
-  .projectsButton {
-    padding:15px;
-    font-size: 28px;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-    border: solid white;
-    background: transparent;
+
+  .btn-mobile {
+    display: block;
     text-decoration: none;
-    font-weight: bold;
   }
-  
-  .projectsButton:hover {
-    color: black;
-    background: white;
-    transition: all 0.2s ease-out;
+
+  .btn {
+    width: 100%;
   }
+}
+.name {
+  background: linear-gradient(to bottom, white, #1f98f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.projectsButton {
+  padding: 15px;
+  font-size: 28px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: solid white;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projectsButton:hover {
+  color: black;
+  background: white;
+  transition: all 0.2s ease-out;
+}
+
+.square {
+  z-index: -100;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(160, 153, 153);
+  position: absolute;
+  animation: moveSquare 10s linear infinite;
+  border-radius: 15%;
+}
+
+/* Animation to move the squares */
+@keyframes moveSquare {
+  0% {
+    transform: translateY(250%) rotate(0deg);
+    opacity: 0; /* Start fully transparent */
+  }
+  50% {
+    opacity: .15; /* Fully visible at the middle of the animation */
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0; /* Fade out when reaching the top */
+  }
+}
+
+

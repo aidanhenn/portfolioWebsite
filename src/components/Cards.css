@@ -1,10 +1,9 @@
-body{
+body {
   overflow: visible !important;
-
 }
 .cards {
   padding: 4rem;
-  background: #fff;
+  background:rgb(211, 214, 211);
 }
 
 h1 {
@@ -22,17 +21,24 @@ h1 {
 .cards__wrapper {
   position: relative;
   margin: 50px 0 45px;
+  
 }
 
 .cards__items {
   margin-bottom: 24px;
 }
-
+.cards__item__text {
+  color: rgb(0, 0, 0);
+  font-weight:bolder;
+  font-size: 20px;
+}
 .cards__item {
   display: flex;
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  background:white;
+
 }
 
 .cards__item__link {
@@ -93,13 +99,29 @@ h1 {
 }
 
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 20px 30px 10px; /* Reduce bottom padding to minimize space */
 }
 
-.cards__item__text {
-  color: #252e48;
-  font-size: 18px;
-  line-height: 24px;
+.card__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Add a slight gap above the buttons */
+  margin-bottom: 0; /* Remove extra space at the bottom */
+}
+
+.card__btn {
+  background-color: #1f98f4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 125px; /* Set a fixed width for the buttons */
+  text-align: center; /* Center button text */
+}
+
+.card__btn:hover {
+  background-color: #0056b3;
 }
 
 @media only screen and (min-width: 1200px) {
