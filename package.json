@@ -8,20 +8,27 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "cookie": "^0.7.0",
     "css-select": "^5.1.0",
     "http-proxy-middleware": "^2.0.7",
+    "nanoid": "^5.0.9",
     "nth-check": "^2.1.1",
-    "postcss": "^8.4.41",
+    "postcss": "^8.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "resolve-url-loader": "^5.0.0",
+    "rollup": "^2.79.2",
     "serialize-javascript": "^6.0.2",
     "svgo": "^3.3.2",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "npm-force-resolutions": "^0.0.10",
     "react-scripts": "^5.0.1"
+  },
+  "resolutions": {
+    "cookie": "0.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
